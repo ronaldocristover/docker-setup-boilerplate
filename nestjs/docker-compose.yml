@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+    app:
+        build: .
+        container_name: project-container-name
+        env_file: .env
+        restart: always
+        ports:
+            - '${PORT}:${PORT}'
