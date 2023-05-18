@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    nextjs_servicename:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: nextjs_servicename
+        ports:
+            - '3001:3001'
